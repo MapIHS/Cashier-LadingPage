@@ -23,6 +23,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background: var(--bluesoft);
 }
 
 .bid-header {
@@ -64,6 +65,11 @@ body {
     border: 0;
 }
 
+.btn-primary:hover {
+    background: var(--navy);
+    color: var(--white);
+}
+
 .btn-secondary {
     padding: 12px 20px 12px 20px;
     background: var(--grey);
@@ -72,6 +78,11 @@ body {
     font-weight: var(--fwmedium);
     border-radius: 50px;
     border: 0;
+}
+
+.btn-secondary:hover {
+    background: var(--navy);
+    color: var(--white) !important;
 }
 
 .navbar-nav .nav-item a:hover {
@@ -95,4 +106,148 @@ body {
     font-weight: var(--fwbold);
     color: var(--navy);
     font-size: 28px;
+}
+
+.navbar {
+    --bs-navbar-padding-y: 0;
+}
+
+.cashire-navbar {
+    padding: 30px;
+    background: var(--white);
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+}
+
+.small-copy {
+    font-size: 14px;
+    color: var(--navy);
+    font-weight: var(--fwsemibold);
+}
+
+.badge {
+    padding: 8px 16px 8px 16px;
+    background: var(--purplesoft);
+    border-radius: 50px;
+    width: 300px;
+}
+
+.badge .icon {
+    float: left;
+    margin-right: 6px;
+}
+
+.badge .small-copy {
+    padding-top: 4px;
+    margin: 0;
+}
+
+.big-header {
+    font-weight: var(--fwextrabold);
+    color: var(--navy);
+    font-size: 48px;
+    line-height: 60px;
+    margin: 0;
+}
+
+.medium-header {
+    font-weight: var(--fwbold);
+    color: var(--navy);
+    font-size: 28px;
+    margin: 0;
+}
+
+.primary-header {
+    font-weight: var(--fwregular);
+    font-size: 16px;
+    color: var(--darkgrey);
+    line-height: 28px;
+    margin: 0;
+}
+
+.mt-70 {
+    margin-top: 70px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.card-brand {
+    width: 227px;
+    height: 110px;
+    border-radius: 16px;
+    background: var(--darkgrey2);
+    text-align: center;
+}
+
+.card-brand .logo {
+    height: 50px;
+    margin-top: 30px;
+}
+
+.carousel {
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+    overflow: hidden;
+}
+
+.carousel-wrapper {
+    display: flex;
+    height: 110px;
+    animation: moveSlideToLeft 25s linear infinite;
+}
+
+@keyframes moveSlideToLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.carousel-left {
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+    overflow: hidden;
+}
+
+.carousel-wrapper-left {
+    display: flex;
+    height: 110px;
+    animation: moveSlideToRight 25s linear infinite;
+}
+
+@keyframes moveSlideToRight {
+    0% {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.big-features-card {
+    
 }
